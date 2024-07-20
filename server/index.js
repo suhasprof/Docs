@@ -7,7 +7,7 @@ mongoose.connect("mongodb://localhost:27017/Google-docs-Clone", {
   // useCreateIndex: true,
 });
 const defaultValue = "";
-const io = require("socket.io")(process.env.PORT || 3001, {
+const io = require("socket.io")("https://docs-server-ahtv.onrender.com", {
   cors: {
     origin: "https://docs-cx22.onrender.com",
     method: ["GET", "POST"],
