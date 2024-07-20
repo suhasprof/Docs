@@ -9,7 +9,7 @@ mongoose.connect("mongodb://localhost:27017/Google-docs-Clone", {
 const defaultValue = "";
 const io = require("socket.io")(process.env.PORT || 3001, {
   cors: {
-    origin: process.env.ORIGIN || "http://localhost:5173",
+    origin: "https://docs-cx22.onrender.com",
     method: ["GET", "POST"],
   },
 });
