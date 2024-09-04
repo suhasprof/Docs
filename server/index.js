@@ -9,7 +9,7 @@ mongoose.connect("process.env.MONGO || mongodb://localhost:27017/Google-docs-Clo
 const defaultValue = "";
 const io = require("socket.io")("3001", {
   cors: {
-    origin: "https://docs-cx22.onrender.com",
+    origin: "https://docs-frontend-one.vercel.app",
     method: ["GET", "POST"],
   },
 });
