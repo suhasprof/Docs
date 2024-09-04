@@ -23,7 +23,7 @@ export default function TextEditor() {
   const [quill, setQuill] = useState();
 
   useEffect(() => {
-    const s = io("https://docs-server-ahtv.onrender.com");
+    const s = io("https://docs-alpha-sable.vercel.app/");
     setSocket(s);
 
     return () => {
